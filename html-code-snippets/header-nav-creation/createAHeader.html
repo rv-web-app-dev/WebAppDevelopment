@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My recipe home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        #header {
+            background-color: chocolate;
+        }
+
+        .leftnav {
+            background-color: darkgrey;
+            float: left;
+            width: 25%;
+        }
+
+        .centernav {
+            background-color: cyan;
+            width: 75%;
+        }
+
+        .rightnav {
+            background-color: hotpink;
+            width: 100%;
+            text-align: right;
+        }
+
+        .forseperator {
+            border-right: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header" name="Common header" class="fontstyle colors">
+        <div class="leftnav">
+            <table>
+                <tr>
+                    <td class="forseperator"><a href="/popularrecipes">Popular Recipes</a></td>
+                    <td><a href="/whatsnew">Whats new</a></td>
+                </tr>
+            </table>
+        </div>
+        <div class="centernav">
+            <table>
+                <tr>
+                    <td><img src="" alt=""></td>
+                    <td>MyRecipes</a></td>
+                </tr>
+            </table>
+        </div>
+        <div class="rightnav">
+            <table>
+                <tr>
+                    <td class="forseperator"><a href="/categories">Categories</a></td>
+                    <td><a href="/mealideas">Meal ideas</a></td>
+                </tr>
+            </table>
+        </div>
+    </header>
+    <hr>
+    <p>Create a header using HTML: table-tr-td, CSS: float and width</p>
+    <p>Learning: You cant use float to create 3 column areas. Only 2 column is possible.</p>
+    <p>Since div is being used, the display:block seems to create an issue !!</p>
+</body>
+
+</html>
