@@ -1,0 +1,5 @@
+wrapping
+dynamically typed language
+learn about the js engines: chakra, v8, spidermonkey, javascript core.
+allocate memory for double every tiem we define it.
+symbol in ES6 ?

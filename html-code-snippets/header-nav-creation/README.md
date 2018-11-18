@@ -1,7 +1,8 @@
-# Creating a header
+# Creating multiple columns
 
-1. Using table,float,width
-----------
+**The multiple columns cane be used to create navigation links in a header, create multiple sections the body, etc.**
+
+## Using table,float,width ##
 
 A table can be used to have adjacent navigation elements
 
@@ -28,4 +29,18 @@ Use a CSS property `float: left` and `width: 25%` to create 2 columns.
 
 **The result:**
 ![](completedwork1.PNG)
-----------
+
+
+## Using CSS: column-count property: ##
+
+Use the `column-count` property to split a big content into multiple columns. See the example in the link below. 
+[reference](https://www.w3schools.com/css/css3_multiple_columns.asp)
+
+**Example snippet:**
+
+	        -webkit-column-count: 5; /* Chrome, Safari, Opera */
+            -moz-column-count: 5; /* Firefox */
+            column-count: 5;
+
+![](splitContentUsingColumnCount.PNG)
+

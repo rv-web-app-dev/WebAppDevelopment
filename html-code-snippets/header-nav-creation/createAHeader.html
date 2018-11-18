@@ -36,6 +36,16 @@
         .forseperator {
             border-right: 1px solid black;
         }
+		
+		.column-count{
+            -webkit-column-count: 5; /* Chrome, Safari, Opera */
+            -moz-column-count: 5; /* Firefox */
+            column-count: 5;
+            column-gap: 100px;
+            -webkit-column-rule-style: solid; /* Chrome, Safari, Opera */
+            -moz-column-rule-style: solid; /* Firefox */
+            column-rule-style: solid;
+		}
     </style>
 </head>
 
@@ -66,10 +76,29 @@
             </table>
         </div>
     </header>
+    <br>    
+	<header class="column-count">
+        <a href="">meHome</a>
+        <a href="">Want a Loan?</a>
+        <a href="">Mobile App</a>
+        <a href="">Sell/Rent property</a>
+        <a href="">My Account</a>
+    </header>
+    <br>
+    <header class="column-count">
+        <a href="">aaaaaaaaaaaaaa</a>
+        <a href="">bbbb</a>
+        <a href="">cccc</a>
+        <a href="">dddd</a>
+        <a href="">eeee</a>
+    </header>
+    <br>    
     <hr>
     <p>Create a header using HTML: table-tr-td, CSS: float and width</p>
     <p>Learning: You cant use float to create 3 column areas. Only 2 column is possible.</p>
     <p>Since div is being used, the display:block seems to create an issue !!</p>
+    <p>learning: column-count: takes the whole content and splits it into the number given. not useful for vav links. 
+        may be display a big content into multipl sections only.</p>
 </body>
 
 </html>
