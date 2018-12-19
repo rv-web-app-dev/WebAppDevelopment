@@ -9,3 +9,4 @@ console.log(divideByZero / negDivBy0);
 //Add more apis wrto Math fucntions here....
 
 console.log(Math.PI);
+

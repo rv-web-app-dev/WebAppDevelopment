@@ -135,7 +135,32 @@ console.log(func2());
 
 () => { console.log(1 / 100) }; //How to invoke this function? Its ananymous !!
 
-let funcWithProps = (props) => {console.log(props.a)}
-console.log(funcWithProps({a:'a'}));
+let funcWithProps = (props) => { console.log(props.a) }
+console.log(funcWithProps({ a: 'a' }));
 //console.log(funcWithProps()); //Error !! Cannont read a of undefined.
+
+(function () { var a = 2; var b = a; console.log(b, a) })();
+console.log("a defined? " + (typeof a === 'undefined'));
+console.log("b defined? " + (typeof b === 'undefined'));
+//console.log(a,b) // a is not defined
+
+// var a=b=2 is short hand for b=2; var a=b;
+
+//(function() {var a=b=2; console.log(a)})(); // b is not defined
+//console.log(a,b) // b is not defined
+
+//c=4; // c is undefined : error
+//var d=c; // c is not defined : error
+
+
+var testThis = { 
+    a: '1', 
+    func: function () { 
+        var self = this;
+        console.log(this.b); 
+        (function() {console.log(self.a)})()
+} };
+testThis.func(); //this.b is undefined till here
+testThis.b = 2;
+testThis.func(); //this.b is now available.
 

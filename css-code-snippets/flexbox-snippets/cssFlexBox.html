@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <style>
-        h1 {
+        h1,h4 {
             color: dodgerblue;
             text-align: center;
         }
@@ -19,15 +19,18 @@
         }
 
         .main {
-            order: 1
+            order: 1;
+            background-color: tomato;
         }
 
         .side1 {
-            order: 3
+            order: 3;
+            background-color: aqua;
         }
 
         .side2 {
-            order: 2
+            order: 2;
+            background-color: grey
         }
 
         .flex-wrap {
@@ -43,14 +46,6 @@
             width: 25px;
         }
 
-        .align-items div,
-        .flex-basis div {
-            padding: 50px;
-            background-color: magenta;
-            margin: 50px;
-            width: 25px;
-        }
-
         .align-items {
             border: 10px solid slategrey;
             display: flex;
@@ -61,10 +56,18 @@
             display: flex;
             flex-basis: 25%;
         }
+
+        .align-items div,.flex-basis div {
+            padding: 50px;
+            background-color: magenta;
+            margin: 50px;
+            width: 25px;
+        }
     </style>
 </head>
 
 <body>
+    <h4>EXAMPLES OF USAGE OF THE css-property display:flex (part of css-flex-box).</h4>
     <h1>display:flex</h1>
     <div class="flex">
         <div class="main">
@@ -91,7 +94,7 @@
         </div>
     </div>
     <hr>
-    <h1>display:flex, flex-wrap:wrap, justify-content</h1>
+    <h1>display:flex, flex-wrap:wrap, justify-content:space-around</h1>
     <div class="flex-wrap">
         <div>1</div>
         <div>2</div>
@@ -105,7 +108,7 @@
         <div>10</div>
     </div>
     <hr>
-    <h1>align-items</h1>
+    <h1>display: flex;align-items:flex-end</h1>
     <div class="align-items">
         <div>Neque porro quis quam</div>
         <div>est qui dolorem ipsum quia dolor sit amet</div>
@@ -113,7 +116,8 @@
         <div>adipisci velit...</div>
     </div>
     <hr>
-    <h1>flex-basis</h1>
+    <h1>display: flex;flex-basis:25%</h1>
+    <h4>This defines the default size of an element before the remaining space is distributed.</h4>
     <div class="flex-basis">
         <div>Nequeporro quis quam</div>
         <div>est qui dolorem ipsum quia dolor sit amet</div>
@@ -121,7 +125,7 @@
         <div>adipisci velit...</div>
     </div>
     <hr>
-    <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">A Complete Guide to Flexbox</a>
+    <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="blank">A Complete Guide to Flexbox</a>
 </body>
 
 </html>

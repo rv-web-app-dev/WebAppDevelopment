@@ -11,11 +11,20 @@ const example = {
   hasAusPR: true,
 };
 
+console.log(typeof example);
 console.log(example.address.housenum);
 console.log(typeof example.address.housenum);
 console.log(typeof example.hasAusPR);
 console.log(typeof example.fname);
 console.log(typeof example.sex);
+
+//console.log(typeof undeclaredYet); //refrence error
+let undeclaredYet; // this happens for let, const, new Class
+console.log(typeof undeclaredYet);
+let nullObjectIsObject = null; 
+console.log(typeof nullObjectIsObject);
+let bar={}; let foo=bar;
+console.log(typeof foo);
 
 console.log(example.hasOwnProperty('fname'));
 console.log(example.hasOwnProperty('sex'));
@@ -122,8 +131,6 @@ var obj = {
 }
 console.log(obj.foo(), obj.foo, obj.baz);
 
-
-
 // Inheritence and prototype
 var f = function(){this.a=1, this.b=2}; //f is created as a function
 var o = new f(); // o is child of f
@@ -136,6 +143,11 @@ console.log(o.b);
 console.log(o.c);
 // Check d in o, else o[[Prototype]], else o[[Prototype]][[Prototype]]
 console.log(o.d);
+
+// You cant call the variable within f directly, as its a function ... and it needs to be invoked.
+console.log(f.a);
+// the below is also not possible as the current function doesnt return anything
+//console.log(f().a);
 
 // Always use new keyword with functions for prototypal inheritence.
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain#Summary_of_methods_for_extending_the_protoype_chain
@@ -151,6 +163,10 @@ var z={
 var y=Object.create(z);
 console.log(z.m());
 y.a=2;
+console.log(y,z);
 // the value of a is now 2 as the this refers to y and not z.
 console.log(y.m());
 
+let exIterator = Object.keys(example);
+console.log(exIterator);
+exIterator.forEach(key => {console.log(example[key])});

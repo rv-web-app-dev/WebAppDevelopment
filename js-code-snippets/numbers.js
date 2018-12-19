@@ -4,6 +4,33 @@ console.log(_number);
 console.log(_float);
 console.log(_number.valueOf());
 
+// The below are NOT numbers
+console.log(isNaN('hello world'));
+console.log(isNaN({}));
+console.log(isNaN(['a']));
+console.log(isNaN(undefined));
+console.log(isNaN('a'*1));
+// The below are treated as numbers
+console.log(isNaN(false));
+console.log(isNaN(true));
+console.log(isNaN(Infinity));
+console.log(isNaN(-Infinity));
+console.log(isNaN(null));
+console.log(isNaN([]));
+
+// ES6: Number.isNaN better than teh global isNaN().
+console.log(Number.isNaN('a'/1));
+
+// Interesting !!
+console.log(0.1+0.2);
+console.log(0.1+0.2 == 0.3)
+
+console.log(Number.isInteger(1.0))
+console.log(Number.isSafeInteger(1.0))
+
+var number;
+ if((number !== null || number.length !==0) && !isNaN(number)){console.log('This is a number')}
+
 let expression = 1 * 8 + 90 + (-90) / 8 + -100;
 console.log(expression);
 
