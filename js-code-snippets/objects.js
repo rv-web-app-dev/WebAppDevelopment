@@ -170,3 +170,5 @@ console.log(y.m());
 let exIterator = Object.keys(example);
 console.log(exIterator);
 exIterator.forEach(key => {console.log(example[key])});
+
+

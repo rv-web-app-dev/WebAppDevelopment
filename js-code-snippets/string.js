@@ -1,7 +1,7 @@
 const world = 'world';
 const ex = '  !!      ';
 let example = `Hello ${world} ${ex}`; // ES6 has instroduced interpolation using ``, so we can use ${} to do that as shown here
-console.log(example); 
+console.log(example);
 
 // Strings have length prop
 console.log(example.length);
@@ -16,3 +16,6 @@ console.log(ex.trim().length);
 console.log(example.split(' '));
 console.log(example.trim().split(' '));
 console.log();
+
+let checkStr = '';
+console.log(''.toUpperCase())
