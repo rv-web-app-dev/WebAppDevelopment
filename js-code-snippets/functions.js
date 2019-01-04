@@ -164,3 +164,7 @@ testThis.func(); //this.b is undefined till here
 testThis.b = 2;
 testThis.func(); //this.b is now available.
 
+let hello= async () => {
+    await console.log('....')
+}
+hello()
